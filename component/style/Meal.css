@@ -1,0 +1,59 @@
+
+.MealCont {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    padding: 40px;
+    background: linear-gradient(120deg, #e0e7ff 0%, #f0f4f8 100%);
+    min-height: 100vh;
+    border-radius: 24px;
+    width: 90vw;
+    margin: 0 auto;
+
+}
+
+.Meal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(125, 160, 250, 0.13);
+    padding: 24px 16px 20px 16px;
+    transition: transform 0.18s, box-shadow 0.18s;
+    border: none;
+}
+
+.Meal:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(125, 160, 250, 0.18);
+}
+
+.Meal h1 {
+    font-size: 1.2rem;
+    color: #22223b;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.Meal img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(125, 160, 250, 0.10);
+    margin-bottom: 12px;
+    border: 3px solid #e0e7ff;
+    background: #f0f4f8;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #22223b;
+    margin-bottom: 16px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
