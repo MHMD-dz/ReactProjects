@@ -1,0 +1,47 @@
+.TodoInput{
+    border-radius: 8px;
+    border: 1px solid #bdbdbd;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #f0f4f8;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    margin-left: 10%;
+}
+
+.TodoInput:focus {
+    outline: none;
+    background-color: #e3eafc;
+    border-color: #7da0fa;
+}
+
+
+.Todo ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.Todo {
+    background-color: #f7fafc;
+    padding: 0.5em 1em;
+    width: auto;
+    border-radius: 8px;
+    height: auto;
+    
+
+}
+
+.liTodo{
+    margin: 20px;
+    background-color: #e3eafc;
+    padding: 10px;
+    border-radius: 8px;
+    height: auto;
+    word-break: break-all;
+    display: flex;
+    color: #22223b;
+    justify-content: space-between;
+}

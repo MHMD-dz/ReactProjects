@@ -1,9 +1,13 @@
 import {Counter } from "./Counter";
+import { Todo } from "./Todo";
+import { Meal } from "./Meal"
 
 const App = () => {
   return (
-    <div>
-      <Counter />
+    <div style={{width: "500px" , height: "500px"}}>
+      {/*<Counter />
+      <Todo />*/}
+      <Meal />
     </div>
   )
 }
