@@ -2,23 +2,25 @@
 //import { Todo } from "./Todo";
 //import { Meal } from "./Meal"
 //import { Calculator } from './Calculator'
-import { Ac } from "./Ac";
-import { accordionData } from "./util/content";
+//import { Ac } from "./Ac";
+//import { accordionData } from "./util/content";
+import { Form } from "./Form";
 
 const App = () => {
   return (
-    <div style={{width: "500px" , height: "500px"}}>
+    <div>
       {/*<Counter />
       <Todo />
       <Meal />
-      <Calculator />*/}
+      <Calculator />
       <div className="accordion" >
         {accordionData.map(({title , content }, index) => {
           return (
             <Ac key={Math.random()} title={title} content={content} />
           );
         })}
-      </div>
+      </div>*/}
+      <Form />
     </div>
   )
 }
