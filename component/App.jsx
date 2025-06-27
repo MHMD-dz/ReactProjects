@@ -4,7 +4,11 @@
 //import { Calculator } from './Calculator'
 //import { Ac } from "./Ac";
 //import { accordionData } from "./util/content";
-import { Form } from "./Form";
+//import { Form } from "./Form";
+import { ProductList } from "../src/component/ProductShow/ProductList.jsx";
+import data  from "../src/data/Product";
+import {Navigation} from "../src/component/Navigation/Navigation.jsx"
+import "../src/index.css"
 
 const App = () => {
   return (
@@ -19,8 +23,12 @@ const App = () => {
             <Ac key={Math.random()} title={title} content={content} />
           );
         })}
-      </div>*/}
-      <Form />
+      </div>
+      <Form />*/}
+      <Navigation />
+      <ProductList props={data} />
+      
+
     </div>
   )
 }
