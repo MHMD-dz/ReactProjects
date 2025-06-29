@@ -1,0 +1,64 @@
+.category{
+    padding: 10px;
+}
+
+.category h1 {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.Slabel{
+    margin-right: 16px;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.Slabel input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    
+}
+
+.Sspan {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    margin-left: 65px;
+}
+
+.Slabel:hover input ~ .Sspan {
+    background-color: #a3a3a3;
+}
+
+.Slabel input:checked ~ .Sspan {
+    background-color: #27bbff;
+}
+
+.Slabel .Sspan::after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 6px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.Slabel input:checked ~ .Sspan::after {
+    display: block;
+}

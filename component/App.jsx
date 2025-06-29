@@ -8,6 +8,8 @@
 import { ProductList } from "../src/component/ProductShow/ProductList.jsx";
 import data  from "../src/data/Product";
 import {Navigation} from "../src/component/Navigation/Navigation.jsx"
+import {Recommended} from "../src/component/Recommended/Recommended.jsx"
+import {SideBar} from "../src/component/SideBar/SideBar.jsx"
 import "../src/index.css"
 
 const App = () => {
@@ -25,8 +27,11 @@ const App = () => {
         })}
       </div>
       <Form />*/}
+      <SideBar />
       <Navigation />
+      <Recommended />
       <ProductList props={data} />
+      
       
 
     </div>
