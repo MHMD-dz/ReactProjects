@@ -1,8 +1,8 @@
 import "./Style.css";
 import { AiFillStar } from "react-icons/ai";
 
-export const ProductCart = ({ prop }) => {
-  const item = prop;
+export const ProductCart = ({ product }) => {
+  const item = product;
   const stars = [];
   for (let i = 0; i < 5; i++) {
     stars.push(

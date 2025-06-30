@@ -3,7 +3,7 @@ import {Category}  from "../Category/Category"
 import {Price} from "../Price/Price"
 import {Colors} from "../Colors/Colors"
 
-export const SideBar = () => {
+export const SideBar = ({handleChange}) => {
   return (
     <>
         <section className="sideBar" >
@@ -11,9 +11,9 @@ export const SideBar = () => {
                 <h1>🛒</h1>
             </div>
 
-            <Category />
-            <Price />
-            <Colors />
+            <Category handleChange={handleChange} />
+            <Price handleChange={handleChange} />
+            <Colors handleChange={handleChange} />
 
         </section>
     </>

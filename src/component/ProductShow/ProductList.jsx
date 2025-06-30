@@ -1,12 +1,12 @@
 import { ProductCart } from '../ProductCart/ProductCart.jsx'
 import "./Style.css"
 
-export const ProductList = ({props}) => {
+export const ProductList = ({product}) => {
   return (
     <div className="productList" >
         {
-            props.map((item) => {
-                return <ProductCart prop={item} key={item.id} />
+            product.map((item) => {
+                return <ProductCart product={item} key={item.id} />
             })
         }
     </div>

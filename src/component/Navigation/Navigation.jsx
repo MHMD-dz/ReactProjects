@@ -2,11 +2,11 @@ import {  AiOutlineShoppingCart, AiOutlineUserAdd } from "react-icons/ai"
 import { FiHeart } from "react-icons/fi"
 import "./Nav.css"
 
-export const Navigation = () => {
+export const Navigation = ({handelInputChange}) => {
   return (
     <nav>
         <div className="Navigation" >
-            <input 
+            <input onChange={handelInputChange}
                 type="text" 
                 placeholder="Enter the product name" 
                 className="SearchInp"
